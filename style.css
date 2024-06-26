@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.container {
+    width: 100%;
+}
+
+.section {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+.section-title {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    background-color: #e7e7e7;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 17px;
+    margin: 10px;
+    width: 86px;
+    height: 28px;
+}
+
+#section1 {
+    background-color: #ffcccb; /* Light Red */
+}
+
+#section2 {
+    background-color: #ccffcc; /* Light Green */
+}
+
+#section3 {
+    background-color: #ccccff; /* Light Blue */
+}
+
+#section1 .section-title {
+    background-color: #ff6666; /* Red */
+}
+
+#section2 .section-title {
+    background-color: #66ff66; /* Green */
+}
+
+#section3 .section-title {
+    background-color: #6666ff; /* Blue */
+}
+
+@media (min-width: 992px) {
+    .section {
+        float: left;
+        width: 32%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #section1, #section2 {
+        float: left;
+        width: 48%;
+    }
+
+    #section3 {
+        clear: both;
+        width: 98%;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: 98%;
+        margin: 10px auto;
+    }
+}
